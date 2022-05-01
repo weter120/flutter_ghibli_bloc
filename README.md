@@ -1,16 +1,12 @@
 # flutter_ghibli_bloc
 
-A new Flutter project.
+App based on [Ghibli Api](https://ghibliapi.herokuapp.com/) with [bloc](https://pub.dev/packages/flutter_bloc) state management.
 
-## Getting Started
+> You should have [Flutter](https://docs.flutter.dev/get-started/install) installed on your computer.
 
-This project is a starting point for a Flutter application.
+Run in project folder terminal command:
 
-A few resources to get you started if this is your first Flutter project:
+1. ``flutter pub get`` - for getting dependendcies
+2. ``flutter run`` - for running an application
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+So, you good to go!
