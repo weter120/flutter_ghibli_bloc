@@ -10,6 +10,8 @@ class Film {
     required this.releaseDate,
     required this.runningTime,
     required this.rtScore,
+    required this.image,
+    required this.movieBanner,
   });
 
   final String id;
@@ -22,4 +24,6 @@ class Film {
   final String releaseDate;
   final String runningTime;
   final String rtScore;
+  final String image;
+  final String movieBanner;
 }

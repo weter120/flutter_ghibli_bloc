@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_ghibli_bloc/main/bloc/main_bloc.dart';
 import 'package:flutter_ghibli_bloc/main/bloc/main_state.dart';
 import 'package:flutter_ghibli_bloc/main/widgets/film_widget.dart';
+import 'package:flutter_ghibli_bloc/utils/strings.dart';
 import 'package:ghibli_api/ghibli_api.dart';
 
 class MainScreenBody extends StatelessWidget {
@@ -59,7 +60,7 @@ class _MainStateErrorWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('Something went wrong'),
+      child: Text(AppStrings.somethingWentWrong),
     );
   }
 }

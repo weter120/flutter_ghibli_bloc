@@ -12,6 +12,8 @@ class JsonToFilmMapper implements Mapper<Map<String, dynamic>, Film> {
   static const String _runningTimeKey = 'running_time';
   static const String _releaseDateKey = 'release_date';
   static const String _rtScoreKey = 'rt_score';
+  static const String _imageKey = 'image';
+  static const String _movieBannerKey = 'movie_banner';
 
   @override
   Film transform(Map<String, dynamic> jsonMap) {
@@ -25,6 +27,8 @@ class JsonToFilmMapper implements Mapper<Map<String, dynamic>, Film> {
     final releaseDate = jsonMap[_releaseDateKey] as String;
     final runningTime = jsonMap[_runningTimeKey] as String;
     final rtScore = jsonMap[_rtScoreKey] as String;
+    final image = jsonMap[_imageKey] as String;
+    final movieBanner = jsonMap[_movieBannerKey] as String;
     return Film(
       id: id,
       title: title,
@@ -36,6 +40,8 @@ class JsonToFilmMapper implements Mapper<Map<String, dynamic>, Film> {
       releaseDate: releaseDate,
       runningTime: runningTime,
       rtScore: rtScore,
+      image: image,
+      movieBanner: movieBanner,
     );
   }
 }
